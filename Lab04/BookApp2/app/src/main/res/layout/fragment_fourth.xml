@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FourthFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnPrev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@android:drawable/btn_star" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/btnNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@android:drawable/btn_star" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TextViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:padding="10sp"
+                android:text="Chapter 4"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu ante at nibh accumsan maximus eget non odio. Proin vulputate vestibulum purus id congue. Phasellus sit amet augue commodo purus congue rhoncus eget quis tortor. In consequat ipsum a feugiat malesuada. Phasellus dignissim tortor luctus, mollis magna non, condimentum velit. Curabitur luctus elit in lobortis euismod. Nulla facilisi. Phasellus gravida pulvinar tortor, et lacinia tortor molestie id. Vivamus nec metus a quam commodo laoreet at non erat. Interdum et malesuada fames ac ante ipsum primis in faucibus.  Proin tincidunt, ipsum sed facilisis pellentesque, mauris felis ornare dolor, eu mollis purus arcu id tortor. Integer varius semper magna eu dictum. Nulla pretium metus et egestas placerat. Integer fringilla mauris elit, sed tempor mauris rhoncus vel. Vivamus pretium diam in lorem rhoncus tempus. Nam posuere vel ex a mattis. Duis tincidunt eu dui ac malesuada. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus vel nisl massa. Fusce suscipit tellus ac sapien placerat, a facilisis diam pharetra. Aliquam porta congue imperdiet.  Quisque turpis est, imperdiet eget dignissim ut, aliquet vel augue. Duis maximus lacus a nisi egestas ultricies. Mauris ac erat posuere massa feugiat luctus. Sed blandit sollicitudin leo. Nulla at dictum metus. Morbi hendrerit enim ut nisi euismod, ac mollis eros finibus. Morbi ac imperdiet diam. Donec quam dolor, dapibus vel dui eu, porta rutrum erat. Sed hendrerit tristique sodales. In fringilla, ante in vestibulum efficitur, purus lectus condimentum elit, quis semper justo sapien id enim.  Vivamus massa erat, sodales eu ultricies ac, vulputate at velit. Curabitur leo metus, convallis in ipsum in, malesuada dictum quam. Duis dignissim sollicitudin enim vitae ullamcorper. Vestibulum tristique lorem nec massa lobortis laoreet. Nullam accumsan leo id lacus elementum, eget lobortis turpis luctus. Nam a arcu ut felis tempor efficitur. In bibendum suscipit erat, non lacinia justo aliquet ut. Phasellus sit amet justo neque. Donec lacinia lacus accumsan, ultricies sapien a, viverra diam.  Nam neque leo, ullamcorper id lacus sed, posuere tempor sapien. Phasellus quis viverra lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu bibendum augue. Aenean commodo cursus cursus. Suspendisse posuere scelerisque urna. Proin imperdiet mattis enim eget eleifend. Aliquam erat volutpat. Maecenas suscipit, ante vulputate fermentum hendrerit, ex erat eleifend ex, non vestibulum sapien elit eu sem. "
+                android:textAlignment="center" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
