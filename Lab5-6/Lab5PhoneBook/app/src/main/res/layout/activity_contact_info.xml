@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactInfoActivity">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/NameLayuout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Name:"
+            android:id="@+id/txt1"
+            android:layout_weight="25"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtName"
+            android:layout_weight="75"
+            android:editable="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/SurnameLayout"
+        android:layout_below="@+id/NameLayuout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Surname:"
+            android:id="@+id/txt2"
+            android:layout_weight="25"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtSurname"
+            android:layout_weight="75"
+            android:editable="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/PhoneLayout"
+        android:layout_below="@+id/SurnameLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Phone:"
+            android:id="@+id/txt3"
+            android:layout_weight="25"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtPhone"
+            android:layout_weight="75"
+            android:editable="false"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/AdressLayout"
+        android:layout_below="@+id/PhoneLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Adress:"
+            android:id="@+id/txt4"
+            android:layout_weight="5"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtAdress"
+            android:layout_weight="95"
+            android:editable="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/EmailLayout"
+        android:layout_below="@+id/AdressLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="E-mail:"
+            android:id="@+id/txt5"
+            android:layout_weight="25"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtEmail"
+            android:layout_weight="75"
+            android:editable="false"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALL"
+        android:id="@+id/btnCall"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="50dp"
+            android:id="@+id/btnSave"
+            android:layout_weight="1"
+            android:text="Save &amp;     Go Back"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="35dp"
+            android:text="Delete"
+            android:layout_toRightOf="@+id/btnEdit"
+            android:id="@+id/btnDelete"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
